@@ -77,6 +77,26 @@ function playGame(numRounds) {
     }
 }
 
+const html = document.querySelector('html')
+const body = document.querySelector('body')
+const container = document.querySelector('.container')
+const buttons = document.querySelector('buttons')
+const displayResult = document.createElement('h1')
 
-const gameWinner = playGame(5)
-alert(gameWinner)
+container.appendChild(displayResult)
+
+container.addEventListener('click', (event) => {
+    target = event.target
+
+    switch (target.className) {
+        case 'rock':
+            userChoice = 'rock'
+            break
+        case 'paper':
+            userChoice = 'paper'
+            break
+        case 'scissor':
+            userChoice = 'scissor' 
+            break
+    }
+})

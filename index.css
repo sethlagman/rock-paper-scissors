@@ -15,6 +15,7 @@ html {
 .container {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .buttons {
@@ -22,4 +23,5 @@ html {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 30px;
 }
